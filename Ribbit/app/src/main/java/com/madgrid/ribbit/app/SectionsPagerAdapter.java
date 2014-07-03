@@ -5,8 +5,6 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.support.v13.app.FragmentPagerAdapter;
 
-import com.madgrid.ribbit.app.MainActivity.PlaceholderFragment;
-
 import java.util.Locale;
 
 /**
@@ -30,7 +28,14 @@ import java.util.Locale;
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+
+            switch(position) {
+                case 0:
+                    return new InboxFragment();
+                case 1:
+                    return new FriendsFragment();
+            }
+            return null;
         }
 
         @Override

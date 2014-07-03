@@ -9,13 +9,13 @@ import android.view.ViewGroup;
 /**
  * Created by madgrid on 7/2/14.
  *
- * Check ListFrame if there is a glitch = Modifying Fragments from the Template
+ * Check ListFrame if there is a glich = Modifying Fragments from the Template
  */
-public class InboxFragment extends ListFragment {
+public class FriendsFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_inbox, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_friends, container, false);
 
 
         return rootView;
